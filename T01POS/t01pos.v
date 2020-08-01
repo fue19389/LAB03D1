@@ -4,3 +4,4 @@ module t01pos
 enmodule
 para comer
 necesito pizza
+y hamburguesas
