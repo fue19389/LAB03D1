@@ -1,7 +1,11 @@
 module t01pos();
 
   wire out0,out1,out2,out3,out4,out5,out6;
+<<<<<<< HEAD
   reg A,B,C,D;
+=======
+  reg A,B,C;
+>>>>>>> prueba2
 
   not G4(out4,A);
   not G5(out5,B);
