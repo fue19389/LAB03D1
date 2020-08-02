@@ -10,4 +10,20 @@ module t01pos();
   or  G2(out2,A,out5,out6);
   or  G3(out3,out4,out5,C);
   and G0(out0,out1,out2,out3);
-  
+
+  initial begin
+    $display("A B C | Y");
+    $display("------|--");
+    $monitor("%b %b %b | %b", A, B, C, out0);
+    A = 0; B = 0; C = 0;
+    #1 C = 1;
+    #1 B = 1; C = 0;
+    #1 B = 1; C = 1;
+    #1 A = 1; B = 0; C = 0;
+    #1 A = 1; B = 0; C = 1;
+    #1 A = 1; B = 1; C = 0;
+    #1 A = 1; B = 1; C = 1;
+    #1 $finish:
+  end
+
+endmodule
