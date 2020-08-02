@@ -1,4 +1,3 @@
-
 module t01pos();
 
   wire out0,out1,out2,out3,out4,out5,out6;
