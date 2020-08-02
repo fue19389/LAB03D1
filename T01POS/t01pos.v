@@ -25,10 +25,9 @@ module t01pos();
     #1 A = 1; B = 1; C = 1;
     #1 $finish;
   end
-/*
-  initial begin //hola
+
+  initial begin 
     $dumpfile("t01pos_tb.vcd");
     $dumpvars(0, t01pos);
   end
-*/
 endmodule
