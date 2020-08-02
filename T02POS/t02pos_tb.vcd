@@ -1,5 +1,5 @@
 $date
-	Sat Aug 01 20:43:04 2020
+	Sat Aug 01 20:53:02 2020
 $end
 $version
 	Icarus Verilog
@@ -7,7 +7,7 @@ $end
 $timescale
 	1ps
 $end
-$scope module t02sop $end
+$scope module t02pos $end
 $var wire 1 ! out0 $end
 $var wire 1 " out1 $end
 $var wire 1 # out2 $end
@@ -15,18 +15,22 @@ $var wire 1 $ out3 $end
 $var wire 1 % out4 $end
 $var wire 1 & out5 $end
 $var wire 1 ' out6 $end
-$var reg 1 ( A $end
-$var reg 1 ) B $end
-$var reg 1 * C $end
+$var wire 1 ( out7 $end
+$var wire 1 ) out8 $end
+$var reg 1 * A $end
+$var reg 1 + B $end
+$var reg 1 , C $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
+0,
+0+
 0*
-0)
-0(
-0'
-0&
+1)
+1(
+1'
+1&
 0%
 1$
 1#
@@ -37,37 +41,42 @@ $end
 1!
 1%
 0$
-1*
+1,
 #2
 0!
-0%
+0&
 1$
 0#
-0*
-1)
+0,
+1+
 #3
+0'
+1&
 0$
-1*
+1,
 #4
 1$
+1)
+0(
 1#
+1'
 0"
-0*
+0,
+0+
+1*
+#5
 0)
 1(
-#5
 0$
-1*
+1,
 #6
 1!
-1&
 1$
-0#
-0*
 1)
+0#
+0,
+1+
 #7
-0&
-1'
 0$
-1*
+1,
 #8
