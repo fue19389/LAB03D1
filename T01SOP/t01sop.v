@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-module t01pos();
-
-  wire out0,out1,out2,out3,out4,out5,out6;
-  reg A,B,C,D;
-
-  not G4(out4,A);
-  not G5(out5,B);
-  not G6(out6,C);
-  or  G1(out1,A,B,out6);
-  or  G2(out2,A,out5,out6);
-  or  G3(out3,out4,out5,C);
-  and G0(out0,out1,out2,out3);
-=======
 module t01sop();
 
   wire out0,out1,out2,out3,out4,out5,out6,out7,out8;
@@ -26,7 +12,7 @@ module t01sop();
   and G7(out7,A,out2,C);
   and G8(out8,A,B,C);
   or  G9(out0,out4,out5,out6,out7,out8);
->>>>>>> prueba2
+
 
   initial begin
     $display("A B C | Y");
